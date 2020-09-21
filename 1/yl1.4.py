@@ -1,3 +1,5 @@
+#Ülesande 1.4 lahendus
+
 nimi = input("Sisestage oma nimi: ")
 lubatud_kiirus = int (input("Sisestage lubatud kiirus: "))
 tegelik_kiirus = int (input("Sisestage teie tegelik kiirus: "))
