@@ -1,0 +1,6 @@
+ap_arv = int(input("Sisestage ainepunktide arv:"))
+ap_ajakulu = (ap_arv*26)
+ndl_arv = int(input("Sisestage nädalate arv:"))
+tehe = (ap_ajakulu/ndl_arv)
+lause= round(tehe)
+print("Ühe nädala eeldatav ajakulu on " + str(lause) + " tund(i).")
