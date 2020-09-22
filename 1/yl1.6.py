@@ -1,3 +1,4 @@
+#ülesande 1.6 lahendus.
 
 max_kohad_bussis = int (input("Sisestage kohtade arv bussis: "))
 inimeste_arv = int(input("Sisestage inimeste arv: "))
