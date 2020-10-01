@@ -1,4 +1,4 @@
-#While tsükkel vältimaks programmi "lühisesse" minemast kui sisendiks on midagi muud kui positiivne number
+"""#While tsükkel vältimaks programmi "lühisesse" minemast kui sisendiks on midagi muud kui positiivne number
 while True:
   number_of_laps = 0
   lap_input = input("Sisesta ringide arv: ")
@@ -18,5 +18,16 @@ while True:
   else:
     print("Ringide arv peab olema positiivne arv!")
     continue
+"""
 
-
+lap_input = int(input("Sisesta ringide arv: "))
+number_of_laps = 1
+total_rewards = 0
+while (number_of_laps <= lap_input):
+    print(number_of_laps)
+    if(number_of_laps % 2 == 0):
+        total_rewards = total_rewards + number_of_laps
+        print("you got " + str(number_of_laps) + " rewards")
+        print("currently you have " + str(total_rewards) + " rewards")
+    number_of_laps += 1
+print("total amount of rewards is " + str(total_rewards))
