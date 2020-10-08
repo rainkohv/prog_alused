@@ -1,27 +1,16 @@
+#loeme failist andmed ja lisame ühe kaupa nimekirja
 fail = open("rebased.txt", encoding="UTF-8")
-vastuvõetud = []
+vastuvoetud = []
 for rida in fail:
-     vastuvõetud.append(int(rida))
+     vastuvoetud.append(int(rida))
 fail.close()
+#küsime aastaarvu
+aasta = int(input("Sisestage aasta: "))
+#aastate nimekiri
+aastad = [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
 
-aasta = input("Sisestage aasta: ")
-
-if aasta == "2011":
-    print(vastuvõetud[0])
-elif aasta == "2012":
-    print(vastuvõetud[1])
-elif aasta == "2013":
-    print(vastuvõetud[2])
-elif aasta == "2014":
-    print(vastuvõetud[3])
-elif aasta == "2015":
-    print(vastuvõetud[4])
-elif aasta == "2016":
-    print(vastuvõetud[5])
-elif aasta == "2017":
-    print(vastuvõetud[6])
-elif aasta == "2018":
-    print(vastuvõetud[7])
-else:
-    aasta == "2019"
-    print(vastuvõetud[8])
+if aasta in aastad:
+    #vaja teada mis indeksiga antud aasta nimekirjas on
+    i = aastad.index(aasta)
+    #prindi sama indeksiga väärtus nimekirjast
+    print("Aastas " + str(aasta) + " võeti vastu " + str(vastuvoetud[i]))
